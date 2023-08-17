@@ -21,7 +21,5 @@ port = int(os.getenv('PORT', 8080))
 host = os.getenv('HOST', "0.0.0.0")
 print(f'Listening on host {host} and port {port}')
 
-# if __name__ == "__main__":
-#     app.run(threaded=True, port=8080)
-
-app.run(host=host, port=port, debug=True)
+if __name__ == "__main__":
+    app.run(host=host, port=port, debug=True)
