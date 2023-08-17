@@ -17,5 +17,7 @@ def get_the_website():
 
 print("Before start")
 
-if __name__ == "__main__":
-    app.run(threaded=True, port=8080)
+# if __name__ == "__main__":
+#     app.run(threaded=True, port=8080)
+
+app.run(threaded=True, port=8080)
