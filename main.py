@@ -18,7 +18,7 @@ def get_the_website():
 
 print("Before start")
 port = int(os.getenv('PORT', 8080))
-print('Listening on port %s' % (port))
+print('Listening on port %s' % port)
 
 # if __name__ == "__main__":
 #     app.run(threaded=True, port=8080)
