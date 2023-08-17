@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+import os
 # from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
@@ -16,8 +17,10 @@ def get_the_website():
 
 
 print("Before start")
+port = int(os.getenv('PORT', 8080))
+print('Listening on port %s' % (port))
 
 # if __name__ == "__main__":
 #     app.run(threaded=True, port=8080)
 
-app.run(threaded=True, port=8080)
+app.run(port=port)
