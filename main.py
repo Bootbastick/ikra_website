@@ -23,4 +23,4 @@ print('Listening on port %s' % port)
 # if __name__ == "__main__":
 #     app.run(threaded=True, port=8080)
 
-app.run(port=port)
+app.run(port=port, debug=True)
